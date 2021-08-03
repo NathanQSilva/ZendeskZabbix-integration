@@ -13,9 +13,6 @@ Integração para criação de chamados no zendesk e atualização do chamado no
 - Em canais acesse a função API
 - Em configurações clique em Adicionar token da API
 - De uma descrição e salve o token em algum lugar
-3cm4qW73E3DotVvYuyweprEduMHttoyHm4sVSF1I
-709e580cb7206c2692a5dcaac7d0f0279ee440474b77ccaf250dbc04b22ad1ca
-http://172.16.224.130/api_jsonrpc.php
 
 ## No frontend
 - Acesse 'Administration -> Media types' e importe o arquivo 'zendesk_python.json'
