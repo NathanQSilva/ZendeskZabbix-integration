@@ -1,0 +1,28 @@
+{
+    "zabbix_export": {
+        "version": "5.4",
+        "date": "2021-08-03T13:08:13Z",
+        "media_types": [
+            {
+                "name": "Zendesk Python",
+                "type": "SCRIPT",
+                "script_name": "zendeskScript.sh",
+                "parameters": [
+                    "{ALERT.SENDTO}",
+                    "{ALERT.SUBJECT}",
+                    "{ALERT.MESSAGE}",
+                    "<URL_ZABIX - 'https://ip.do.servidor/api_jsonrpc.php'>",
+                    "<TOKEN_ZABBIX>"
+                ],
+                "message_templates": [
+                    {
+                        "event_source": "TRIGGERS",
+                        "operation_mode": "PROBLEM",
+                        "subject": "https://nathanqsilva.zendesk.com",
+                        "message": "'{ \"EVENT_NAME\": {EVENT.NAME}, \"HOST_NAME\": {HOST.NAME}, \"SEVERITY\": {EVENT.SEVERITY}, \"OP_DATA\": {EVENT.OPDATA}, \"EVENT_ID\": {EVENT.ID}, \"TIGGER_URL\": {TRIGGER.URL},}'"
+                    }
+                ]
+            }
+        ]
+    }
+}
